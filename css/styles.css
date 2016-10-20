@@ -1,0 +1,50 @@
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    background-color: #54e294
+}
+
+#lettering {
+    margin-top: 20px;
+}
+
+#mywoman {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    width: 180px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+#myquote {
+    font-family: 'Lato', sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+#occupation {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    width: 180px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+#lettering {
+    text-align: center;
+}
+
+#stuff {
+    margin: 20px;
+    text-align: center;
+}
