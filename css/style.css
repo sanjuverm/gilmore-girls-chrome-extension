@@ -1,0 +1,88 @@
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#pg-content {
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+	background: white;
+	width: 86%;
+	height: 80%;
+	border-radius: 5px;
+	padding: 3%;
+	position: absolute;
+	z-index: 10;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	opacity: 0.6;
+}
+
+.assignment {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	z-index: 20;
+	padding-bottom: 100px;
+}
+
+.header {
+	font-size: 28px;
+}
+
+
+.content {
+	text-align: left;
+}
+
+a:hover{
+	color:  #3973ac;
+}
+
+.work {
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+.important {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#projects h2{
+	padding: 4px;
+	border: solid;
+	border-color: #3973ac;
+	width: 14%;
+}
+
+#experiences h2{
+	padding: 5px;
+	border: solid;
+	border-color: #3973ac;
+	width: 20%;
+}
+
+#contacts {
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+
+#sketch {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+}
+
+#work-place {
+	font-size: 20px;
+}
+
+ul {
+	padding-left: 20px;
+}

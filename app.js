@@ -340,15 +340,42 @@ var books = [
   {"bookNumber" : "339", "bookTitle" : " The Year of Magical Thinking by Joan Didion"}
 ];
 
-// console.log(books.length);
-var rand = Math.floor(Math.random() * books.length);
-// console.log(rand);
-window.onload = function(){
-	document.getElementById("chosenBook").innerHTML =  books[rand]['bookTitle'];
-	// document.getElementById("myquote").innerHTML = stupid[rand]['quote'];
-  //   document.getElementById("occupation").innerHTML = stupid[rand]['occupation'];
-}
 
-$(document).ready(function() {
-    $("body").css("background-color", "hsla(" + Math.floor(Math.random() * (360)) + ", 75%, 58%, 1)");
+document.addEventListener('DOMContentLoaded', function () {
+  // console.log(books.length);
+  var rand = Math.floor(Math.random() * books.length);
+  // console.log(rand);
+  window.onload = function(){
+  	document.getElementById("chosenBook").innerHTML =  books[rand]['bookTitle'];
+  	// document.getElementById("myquote").innerHTML = stupid[rand]['quote'];
+    //   document.getElementById("occupation").innerHTML = stupid[rand]['occupation'];
+  }
+
+  // $(document).ready(function() {
+  //     $("body").css("background-color", "hsla(" + Math.floor(Math.random() * (360)) + ", 75%, 58%, 1)");
+  // });
+
+
+
+	q = "gilmore girls"; // search query
+
+	request = new XMLHttpRequest;
+	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='+q, true);
+
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data.image_url;
+			console.log(data);
+			document.getElementById("giphyme").innerHTML = '<center><img src = "'+data+'"  title="GIF via Giphy"></center>';
+		} else {
+			console.log('reached giphy, but API returned an error');
+      document.getElementById("giphyme").innerHTML = '<center><img src = "cynic.gif"  title="GIF via Giphy"></center>';
+		 }
+	};
+
+	request.onerror = function() {
+		console.log('connection error');
+	};
+
+	request.send();
 });
