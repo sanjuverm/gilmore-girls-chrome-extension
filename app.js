@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // });
 
 
-
+  // console.log(navigator.geolocation.getCurrentPosition(geoSuccess, geoError));
 	q = "gilmore girls"; // search query
 
 	request = new XMLHttpRequest;
@@ -367,10 +367,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			data = JSON.parse(request.responseText).data.image_url;
 			console.log(data);
 			document.getElementById("giphyme").innerHTML = '<center><img src = "'+data+'"  title="GIF via Giphy"></center>';
-		} else {
-			console.log('reached giphy, but API returned an error');
-      document.getElementById("giphyme").innerHTML = '<center><img src = "cynic.gif"  title="GIF via Giphy"></center>';
-		 }
+		}
+    // else {
+		// 	console.log('reached giphy, but API returned an error');
+    //   document.getElementById("giphyme").innerHTML = '<center><img src = "cynic.gif"  title="GIF via Giphy"></center>';
+		//  }
 	};
 
 	request.onerror = function() {

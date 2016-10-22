@@ -12,3 +12,7 @@ folder onto the page to add the extension to your browser. Doing this should als
 ## Some things that I had struggled with
 The Giphy API returns a URL JSON
 http://coursescript.com/notes/interactivecomputing/animation/
+
+
+## Me figuring out how to get the weather based on someone's location
+https://developers.google.com/web/fundamentals/native-hardware/user-location/
