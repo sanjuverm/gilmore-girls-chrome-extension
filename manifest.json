@@ -3,7 +3,7 @@
 
   "name": "Gilmore-ning",
   "description": "Gilmore Girls themed chrome extension, supplying you with a cup of coffee, book, and quote",
-  "version": "1.0",
+  "version": "0.0.0.1",
   "background" : {
      "scripts": [ "background.js" ]
   },
